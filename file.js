@@ -37,3 +37,8 @@ request.onload = function() {
 
 	
 }
+
+
+submit();
+
+document.getElementById("messageBoxOK").click();
