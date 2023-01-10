@@ -16,19 +16,19 @@ request.onload = function() {
 	if(paraText == data.data.url){
 		const div = document.querySelectorAll('div .hit')[i];
 
-		if(data.data.judge == 1){
+		if(data.data.judge === 1){
     		divElement = document.querySelector('.murl .judgment span #relevant_'+i).click();
-		 }else if(data.data.judge == 2){
+		 }else if(data.data.judge === 2){
     		divElement = document.querySelector('.murl .judgment span #relevant-but-imperfect_'+i).click();
-		 }else if(data.data.judge == 3){
+		 }else if(data.data.judge === 3){
     		divElement = document.querySelector('.murl .judgment span #related_'+i).click();
-		 }else if(data.data.judge == 4){
+		 }else if(data.data.judge === 4){
     		divElement = document.querySelector('.murl .judgment span #not-relevant_'+i).click();
-		 }else if(data.data.judge == 5){
+		 }else if(data.data.judge === 5){
     		divElement = document.querySelector('.murl .judgment span #cannotjudge_'+i).click();
-		 }else if(data.data.judge == 6){
+		 }else if(data.data.judge === 6){
     		divElement = document.querySelector('.murl .judgment span #broken_'+i).click();
-		 }else if(data.data.judge == 0){
+		 }else if(data.data.judge === 0){
     		divElement = document.querySelector('.murl span #detrimental_'+i).click();
 		 }
     }
@@ -39,6 +39,6 @@ request.onload = function() {
 }
 
 
-submit();
+divElement = document.querySelector('#main #controls #submit_button').click();
 
-document.getElementById("messageBoxOK").click();
+//divElement = document.querySelector('#msgBoxDiv #messageBox .modal-dialog .modal-content .modal-footer-messagebox #messageBoxOK').click();
